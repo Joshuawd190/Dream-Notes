@@ -14,7 +14,7 @@ router.post('/notes', (req, res) => {
   res.json(note);
 });
 
-router.delete('/note/:id', (req, res) => {
+router.delete('/notes/:id', (req, res) => {
   const deletedNote = deleteNote(req.params.id, notes);
 
   res.json(deletedNote);
